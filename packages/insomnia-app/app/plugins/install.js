@@ -155,7 +155,7 @@ async function _installPluginToTmpDir(lookupName: string): Promise<{ tmpDir: str
       (err, stdout, stderr) => {
         // Check yarn/electron process exit code.
         // In certain environments electron can exit with error even if the command was performed sucesfully.
-        // Checking for sucess message in output is a workaround for false errors.
+        // Checking for success message in output is a workaround for false errors.
         if (err && !stdout.toString().includes('success')) {
           reject(new Error(`${lookupName} install error: ${err.message}`));
           return;
