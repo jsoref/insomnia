@@ -176,7 +176,7 @@ export async function _trackEvent(
   action: string,
   label: ?string,
   value: ?string,
-  queuable: ?boolean,
+  queueable: ?boolean,
 ) {
   const prefix = interactive ? '[ga] Event' : '[ga] Non-interactive';
   console.log(prefix, [category, action, label, value].filter(Boolean).join(', '));
@@ -191,7 +191,7 @@ export async function _trackEvent(
   label && params.push({ name: KEY_EVENT_LABEL, value: label });
   value && params.push({ name: KEY_EVENT_VALUE, value: value });
 
-  await _sendToGoogle(params, !!queuable);
+  await _sendToGoogle(params, !!queueable);
 }
 
 export async function _trackPageView(location: string) {
