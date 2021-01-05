@@ -54,7 +54,7 @@ export function getName(
   const defaultName = defaultValue || 'openapi';
   const name = typeof rawName === 'string' && rawName ? rawName : defaultName;
 
-  // Sluggify
+  // Slugify
   return generateSlug(name, slugifyOptions);
 }
 
