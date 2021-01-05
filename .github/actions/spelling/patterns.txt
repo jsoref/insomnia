@@ -1,0 +1,36 @@
+# data urls
+data:[a-zA-Z=;,/0-9+-]+
+# Goo.gl
+/goo\.gl/[a-zA-Z0-9]+
+# GitHub SHAs
+(?:\[[0-9a-f]+\]\(https:/|)/github\.com/[^/]+/[^/]+/[^/]+/[0-9a-f]+\b
+\bgithub\.com/[^/]+/[^/]+[@#][0-9a-f]+\b
+# githubusercontent
+/[a-z-]+\.githubusercontent\.com/[-a-zA-Z0-9?&=_\/.]*
+
+# sha256
+sha256:[0-9a-f]+
+# sha-1
+"[0-9a-f]{40}"
+# hex digits including css/html color classes:
+(?:[\\0][xX]|\\u|[uU]\+|#x?|\%23)[0-9a-fA-FgGrR_]{2,}[uU]?[lL]{0,2}\b
+# uuid:
+\b[0-9a-fA-F]{8}-(?:[0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}\b
+
+# id
+(?:_id|parentId): '\S+'
+
+# sha
+/raw/[0-9a-f]{40}/
+
+# signature:
+ signature: [0-9a-f]{32}\b
+
+# "production"
+"(?:development|production)": "[a-zA-Z=;,/0-9+-]+"
+
+# ignore long runs of a single character:
+\b([A-Za-z])\1{3,}\b
+# <word>v#
+v\d+(?:\b|(?=[a-zA-Z]))
+
