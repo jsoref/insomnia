@@ -123,7 +123,7 @@ function parseEndpoints(document) {
     .filter(tag => !tags.map(tag => tag.name).includes(tag))
     .map(tag => ({
       name: tag,
-      desciption: '',
+      description: '',
     }));
 
   const folders = [...tags, ...implicitTags].map(tag => {
