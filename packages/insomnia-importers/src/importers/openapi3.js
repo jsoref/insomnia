@@ -506,7 +506,7 @@ function prepareBody(endpointSchema) {
 }
 
 /**
- * Converts openapi schema of parametes into insomnia one.
+ * Converts openapi schema of parameters into insomnia one.
  *
  * @param {Object[]} parameters - array of OpenAPI schemas of parameters
  * @returns {Object[]} array of insomnia parameters definitions

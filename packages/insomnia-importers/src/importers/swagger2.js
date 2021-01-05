@@ -425,7 +425,7 @@ function prepareBody(schema, endpointSchema, globalMimeTypes) {
 }
 
 /**
- * Converts swagger schema of parametes into insomnia one.
+ * Converts swagger schema of parameters into insomnia one.
  *
  * @param {Object[]} parameters - array of swagger schemas of parameters
  * @returns {Object[]} array of insomnia parameters definitions
