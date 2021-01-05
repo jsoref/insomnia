@@ -80,7 +80,7 @@ A test should not depend on any external services unless absolutely necessary. I
 ### Element selection
 Spectron is built heavily on top of WebdriverIO, and WebdriverIO's `browser` object is available under `app.client` ([docs](https://github.com/electron-userland/spectron#client)). This is the primary API you will need for user interactions, see examples with existing tests.
 
-Through WebdriverIO you can use a host of CSS or React selectors. There is no clear guideline about which selector to use, but whichever approach is used it must favour stablility and be understandable.
+Through WebdriverIO you can use a host of CSS or React selectors. There is no clear guideline about which selector to use, but whichever approach is used it must favour stability and be understandable.
 
 There are trade-offs with each selector approach but it's important to know how generic or specific a particular component or CSS class is, in order to ensure that the correct element is always selected as the application evolves.
 
