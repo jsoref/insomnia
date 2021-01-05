@@ -343,7 +343,7 @@ export class MemClient {
 
   _assertSymlinkEntry(entry: FSEntry): FSLink {
     if (entry.type !== 'symlink') {
-      const e: ErrnoError = new Error(`ENOTDIR: not a simlink, scandir '${entry.path}'`);
+      const e: ErrnoError = new Error(`ENOTDIR: not a symlink, scandir '${entry.path}'`);
       e.errno = -20;
       e.code = 'ENOTDIR';
       e.syscall = 'scandir';
