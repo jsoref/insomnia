@@ -26,7 +26,7 @@ export const loadEnvironment = (
   const baseWorkspaceEnv = loadBaseEnvironmentForWorkspace(db, workspaceId);
   const subEnvs = db.Environment.filter(e => e.parentId === baseWorkspaceEnv._id);
 
-  // If no identifier, return base environmenmt
+  // If no identifier, return base environment
   if (!identifier) {
     logger.trace('No sub environments found, using base environment');
     return baseWorkspaceEnv;
