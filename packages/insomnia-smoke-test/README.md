@@ -194,7 +194,7 @@ Unlike unit tests, the application startup time for a smoke test can sometimes b
 
 ## Contributing a smoke test?
 
-Smoke tests can potentially be flaky, and one attempt to avoid flaky tests in the default branch is to run the final implementation of a test atleast 20 times locally to prove its stability. If a test is unable to achieve this, it is very unlikely to be accepted into the test suite.
+Smoke tests can potentially be flaky, and one attempt to avoid flaky tests in the default branch is to run the final implementation of a test at least 20 times locally to prove its stability. If a test is unable to achieve this, it is very unlikely to be accepted into the test suite.
 
 You can repeat a test quickly by wrapping it with the following block:
 ```js
