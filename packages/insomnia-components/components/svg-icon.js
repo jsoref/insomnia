@@ -24,7 +24,7 @@ import MemoSvgIcnFolder from '../assets/svgr/IcnFolder';
 import MemoSvgIcnGear from '../assets/svgr/IcnGear';
 import MemoSvgIcnGitlabLogo from '../assets/svgr/IcnGitlabLogo';
 import MemoSvgIcnGUI from '../assets/svgr/IcnGui';
-import MemoSvgIcnIndendation from '../assets/svgr/IcnIndentation';
+import MemoSvgIcnIndentation from '../assets/svgr/IcnIndentation';
 import MemoSvgIcnMinusCircleFill from '../assets/svgr/IcnMinusCircleFill';
 import MemoSvgIcnMinusCircle from '../assets/svgr/IcnMinusCircle';
 import MemoSvgIcnPlaceholder from '../assets/svgr/IcnPlaceholder';
@@ -177,7 +177,7 @@ class SvgIcon extends React.Component<Props> {
     [IconEnum.gear]: [ThemeEnum.default, MemoSvgIcnGear],
     [IconEnum.gitlabLogo]: [ThemeEnum.default, MemoSvgIcnGitlabLogo],
     [IconEnum.gui]: [ThemeEnum.default, MemoSvgIcnGUI],
-    [IconEnum.indentation]: [ThemeEnum.default, MemoSvgIcnIndendation],
+    [IconEnum.indentation]: [ThemeEnum.default, MemoSvgIcnIndentation],
     [IconEnum.minusCircle]: [ThemeEnum.default, MemoSvgIcnMinusCircle],
     [IconEnum.minusCircleFill]: [ThemeEnum.default, MemoSvgIcnMinusCircleFill],
     [IconEnum.placeholder]: [ThemeEnum.default, MemoSvgIcnPlaceholder],

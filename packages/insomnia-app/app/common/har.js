@@ -253,7 +253,7 @@ export async function exportHarResponse(response: ResponseModel | null): Promise
     status: response.statusCode,
     statusText: response.statusMessage,
     httpVersion: 'HTTP/1.1',
-    cookies: getReponseCookies(response),
+    cookies: getResponseCookies(response),
     headers: getResponseHeaders(response),
     content: getResponseContent(response),
     redirectURL: '',
@@ -369,7 +369,7 @@ function getRequestCookies(renderedRequest: RenderedRequest): Array<HarCookie> {
   return domainCookies.map(mapCookie);
 }
 
-function getReponseCookies(response: ResponseModel): Array<HarCookie> {
+function getResponseCookies(response: ResponseModel): Array<HarCookie> {
   return misc
     .getSetCookieHeaders(response.headers)
     .map(h => {

@@ -54,7 +54,7 @@ export function getName(
   const defaultName = defaultValue || 'openapi';
   const name = typeof rawName === 'string' && rawName ? rawName : defaultName;
 
-  // Sluggify
+  // Slugify
   return generateSlug(name, slugifyOptions);
 }
 
@@ -64,7 +64,7 @@ export function generateSlug(str: string, options: SlugifyOptions = {}): string 
   return slugify(str, options);
 }
 
-/** characters in curly brances not immediately followed by `://`, e.g. `{foo}` will match but `{foo}://` will not. */
+/** characters in curly braces not immediately followed by `://`, e.g. `{foo}` will match but `{foo}://` will not. */
 const pathVariableSearchValue = /{([^}]+)}(?!:\/\/)/g;
 
 export function pathVariablesToRegex(p: string): string {
